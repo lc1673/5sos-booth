@@ -748,4 +748,175 @@ h1,
     object-fit: contain !important;
     margin: 0 auto !important;
   }
+  /* iPHONE FULL-SCREEN FIT FIX */
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100svh;
+  }
+
+  .app,
+  .home,
+  .home-screen,
+  .screen {
+    min-height: 100svh !important;
+    max-height: none !important;
+    padding: 8px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .main-card,
+  .home-card,
+  .hero-card,
+  .glass-card,
+  .selection-card {
+    width: 100% !important;
+    max-width: 94vw !important;
+    padding: 12px !important;
+    border-radius: 22px !important;
+    margin: 0 auto !important;
+  }
+
+  h1,
+  .hero-title {
+    font-size: 1.65rem !important;
+    line-height: 0.9 !important;
+    margin: 6px 0 8px !important;
+    letter-spacing: 0.01em !important;
+  }
+
+  .eyebrow,
+  .kicker,
+  .booth-label {
+    font-size: 0.65rem !important;
+    margin-bottom: 5px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .subtitle,
+  .hero-subtitle,
+  p {
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .selected-row,
+  .option-row,
+  .choices-row {
+    gap: 6px !important;
+    margin: 8px 0 !important;
+  }
+
+  .selected-card,
+  .summary-card,
+  .choice-summary {
+    padding: 8px 10px !important;
+    border-radius: 16px !important;
+    min-height: auto !important;
+  }
+
+  .selected-card span,
+  .summary-card span,
+  .choice-summary span {
+    font-size: 0.65rem !important;
+  }
+
+  .selected-card strong,
+  .summary-card strong,
+  .choice-summary strong {
+    font-size: 0.7rem !important;
+  }
+
+  .filter-section,
+  .style-section,
+  .strip-section,
+  .frame-section {
+    padding: 10px !important;
+    margin: 8px 0 !important;
+    border-radius: 18px !important;
+  }
+
+  h2,
+  h3,
+  .section-title,
+  .choice-title,
+  .panel-title {
+    font-size: 0.95rem !important;
+    margin: 4px 0 8px !important;
+  }
+
+  .filter-buttons,
+  .style-buttons {
+    gap: 6px !important;
+  }
+
+  .filter-buttons button,
+  .style-buttons button,
+  .filter-btn {
+    padding: 8px 14px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .strip-options,
+  .strip-grid,
+  .frame-options {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    align-items: start !important;
+  }
+
+  .strip-card,
+  .frame-card,
+  .preview-card {
+    padding: 7px !important;
+    border-radius: 16px !important;
+    min-height: auto !important;
+  }
+
+  .strip-card img,
+  .frame-card img,
+  .preview-card img,
+  .strip-preview,
+  .frame-preview {
+    max-height: 235px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .strip-card label,
+  .frame-card label,
+  .strip-card p,
+  .frame-card p {
+    font-size: 0.72rem !important;
+    margin-top: 5px !important;
+  }
+
+  .selected-badge,
+  .badge {
+    font-size: 0.62rem !important;
+    padding: 5px 9px !important;
+  }
+
+  .start-button,
+  button.start-button {
+    margin-top: 10px !important;
+    padding: 10px 22px !important;
+    font-size: 0.72rem !important;
+    min-height: auto !important;
+  }
+}
 }
