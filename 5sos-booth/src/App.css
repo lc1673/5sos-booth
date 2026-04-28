@@ -938,4 +938,44 @@ h1,
     margin: 10px auto 0 !important;
   }
 }
+/* FINAL OVERRIDE: make booth strip + final strip smaller on phones */
+@media (max-width: 600px) {
+  .booth-screen .live-strip {
+    width: 145px !important;
+    max-width: 145px !important;
+    margin: 0 auto !important;
+  }
+
+  .booth-screen .live-strip .strip {
+    width: 145px !important;
+    max-width: 145px !important;
+    border-radius: 14px !important;
+  }
+
+  .final-screen .final-strip {
+    width: 165px !important;
+    max-width: 165px !important;
+    margin: 10px auto 0 !important;
+  }
+
+  .final-screen .final-strip .strip {
+    width: 165px !important;
+    max-width: 165px !important;
+    border-radius: 14px !important;
+  }
+
+  .booth-grid {
+    gap: 8px !important;
+  }
+
+  .camera-card {
+    padding: 6px !important;
+    border-radius: 16px !important;
+  }
+
+  .camera-frame {
+    max-height: 42vh !important;
+    border-radius: 14px !important;
+  }
+}
 }
