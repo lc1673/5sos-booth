@@ -626,3 +626,126 @@ h1,
 .hero-title {
   font-weight: 900 !important;
 }
+/* MOBILE SIZE FIXES */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .app,
+  .home,
+  .booth-page,
+  .final-page {
+    min-height: 100vh;
+    padding: 14px !important;
+  }
+
+  .hero-card,
+  .selection-card,
+  .booth-card,
+  .final-card,
+  .main-card {
+    width: 100% !important;
+    max-width: 94vw !important;
+    padding: 18px !important;
+    border-radius: 24px !important;
+  }
+
+  h1,
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 3.4rem) !important;
+    line-height: 0.95 !important;
+    margin-bottom: 12px !important;
+  }
+
+  h2,
+  h3,
+  .section-title,
+  .choice-title,
+  .panel-title {
+    font-size: 1.15rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .subtitle,
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.35 !important;
+    max-width: 90% !important;
+    margin: 0 auto 16px !important;
+  }
+
+  .option-row,
+  .selected-row,
+  .choices-row,
+  .filter-row {
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .strip-options,
+  .strip-grid,
+  .frame-options {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .strip-card,
+  .frame-card,
+  .preview-card {
+    padding: 10px !important;
+    border-radius: 20px !important;
+  }
+
+  .strip-card img,
+  .frame-card img,
+  .preview-card img,
+  .strip-preview,
+  .frame-preview {
+    max-height: 360px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+
+  .start-button,
+  .download-button,
+  .retake-button,
+  button {
+    font-size: 0.85rem !important;
+    padding: 13px 26px !important;
+  }
+
+  .camera-wrap,
+  .camera-container,
+  .booth-camera,
+  .camera-card {
+    width: 100% !important;
+    max-width: 94vw !important;
+    min-height: auto !important;
+  }
+
+  video,
+  .camera-video {
+    max-height: 48vh !important;
+    object-fit: cover !important;
+    border-radius: 22px !important;
+  }
+
+  .booth-layout,
+  .capture-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .booth-preview,
+  .live-strip-preview,
+  .final-strip-preview {
+    max-height: 58vh !important;
+    width: auto !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}
